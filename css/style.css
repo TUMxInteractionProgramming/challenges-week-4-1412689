@@ -45,7 +45,10 @@ button, strong {
     width: 60%;
     left: 40%;
 }
-
+#chat h1 i {
+    position: absolute;
+    right:16px;
+}
 #messages {
     /* #5 #messages are now wrapped in a div to #scroll properly */
     position: absolute;
@@ -127,6 +130,22 @@ li .channel-meta {
     position: absolute;
     right: 16px;
     top: 12px;
+    font-size: 24px;
+    display:flex;
+}
+li .channel-meta span {
+    /* #8 #channel #boxes for the additional metadata */
+    /* color */
+    background-color: #3F51B5;
+    color: white;
+    /* appearance */
+    margin:2px;
+    padding:2px;
+    border-radius:2px;
+    font-size:10px;
+
+    /* #8 #channel #centered blue boxes' text content */
+    align-self:center;
 }
 
 li img {
@@ -172,9 +191,10 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+#tab-bar button i {
     display: block;
     margin: 0 auto 4px auto;
+    font-size: 24px;
 }
 
 /* #5 CHAT BAR */
@@ -183,6 +203,13 @@ li.selected {
     /* #5 #smileys #override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
+    font-size: 24px;
+}
+
+#chat-bar input {
+    font-size: 16px;
+    border: none;
+    flex-grow: 1;
 }
 
 #emojis {
